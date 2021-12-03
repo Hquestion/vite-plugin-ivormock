@@ -1,0 +1,23 @@
+{
+  "name": "vite-plugin-ivormock",
+  "version": "1.0.0",
+  "description": "Vite plugin for ivormock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "vite",
+    "ivormock",
+    "ivormock plugin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  },
+  "peerDependencies": {
+    "ivormock": "^1.0.0",
+    "vite": "^2.6.10"
+  }
+}

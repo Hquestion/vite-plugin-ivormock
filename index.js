@@ -38,9 +38,9 @@ module.exports = function viteIvormockPlugin(options) {
                         console.log("ivormock: 服务已启动...")
                     })
                 }
-                promise.then(() => {
-                    const prefix = options.prefix || "/mock";
-                    server.middlewares.use((req, res, next) => {
+                const prefix = options.prefix || "/mock";
+                server.middlewares.use((req, res, next) => {
+                    promise.then(() => {
                         if (req.url.startsWith(prefix)) {
                             req.url = req.url.replace(prefix, "/");
                             proxy.web(req, res, {

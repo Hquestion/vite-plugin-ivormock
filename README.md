@@ -2,6 +2,8 @@
 
 Vite plugin for ivormock
 
+> Ivormock is made for development. Please use it in development environment **only**.
+
 ## Install
 
 ```shell

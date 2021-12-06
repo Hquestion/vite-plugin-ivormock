@@ -12,7 +12,7 @@ module.exports = function viteIvormockPlugin(options) {
             return function () {
                 let promise;
                 const cwd = process.cwd();
-                let mockProject = ivormock.getPathProject(cwd);
+                let mockProject = ivormock.findPathProject(cwd);
                 if (mockProject) {
                     /**
                      * 已存在项目，直接启动
